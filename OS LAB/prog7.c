@@ -33,7 +33,7 @@ int sub(int a, int b);
 //gcc -c main.c
 
 //ar rcs libbasic.a sub.o add.o
-//gcc -o pgm -L. libbasic.a
+//gcc -o pgm main.o -L. libbasic.a
 //./pgm
 
 
@@ -43,5 +43,5 @@ int sub(int a, int b);
 //gcc -c main.c
 //gcc -shared -o libos.so add.o sub.o
 //gcc -o dpgm main.o libos.so
-//sudo cp libos.so/usr/lib
+//sudo cp libos.so/ usr/lib
 //./dpgm
